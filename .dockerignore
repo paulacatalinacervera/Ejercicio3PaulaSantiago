@@ -1,0 +1,15 @@
+.git
+.env
+.env.*
+__pycache__
+*.pyc
+.pytest_cache
+.venv
+venv
+data/synthetic
+data/processed
+data/zone_centroids.csv
+results
+checkpoints
+.streamlit
+*.log

@@ -1,0 +1,9 @@
+FROM apache/spark:3.5.1
+
+USER root
+RUN python3 -m pip install --no-cache-dir python-dotenv==1.0.1 \
+    && mkdir -p /home/spark/.ivy2/cache \
+    && chown -R 185:185 /home/spark
+ENV PATH="${SPARK_HOME}/bin:${PATH}"
+WORKDIR /opt/mobility
+USER 185

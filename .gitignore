@@ -1,0 +1,37 @@
+# Secretos (nunca subir)
+.env
+.env.*
+!.env.example
+secrets/
+*.pem
+*.key
+*.p12
+*.pfx
+*credentials*.json
+service-account*.json
+*token*.json
+
+# Datos generados y artefactos
+data/synthetic/
+data/processed/
+data/zone_centroids.csv
+results/
+checkpoints/
+*.parquet
+*.zip
+/taxi_zone_lookup.csv
+*.log
+
+# Python / IDE / Streamlit
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.idea/
+.vscode/
+.streamlit/
+
+# Documentacion que no se publica
+/ARQUITECTURA.md
+/GUIA_DEMO.md
